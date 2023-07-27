@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Taschenrechner</title> <!-- Titel der Webseite -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Einbindung der externen CSS-Datei -->
+</head>
+<body>
+  <div class="calculator-box"> <!-- Container für den Taschenrechner -->
+    <div class="display-history"> <!-- Container für das Display und die Historie -->
+      <input type="text" id="history" disabled> <!-- Eingabefeld für die Historie, deaktiviert, um die Eingabe zu verhindern -->
+      <input type="text" id="result" disabled> <!-- Eingabefeld für das Ergebnis, deaktiviert, um die Eingabe zu verhindern -->
+    </div>
+
+    <div class="calculator"> <!-- Container für die Tasten des Taschenrechners -->
+      <button class="forms" onclick="clearEntry()">CE</button> <!-- Button für das Löschen des letzten Eingabewerts -->
+      <button class="forms" onclick="clearAll()">C</button> <!-- Button für das Löschen aller Eingabewerte -->
+      <button class="forms" onclick="toggleSign()">+/-</button> <!-- Button zum Umschalten des Vorzeichens des aktuellen Werts -->
+      <button class="operator" onclick="appendOperator('/')">/</button> <!-- Button für die Division -->
+      <button class="number" onclick="appendValue('7')">7</button> <!-- Button für die Zahl 7 -->
+      <button class="number" onclick="appendValue('8')">8</button> <!-- Button für die Zahl 8 -->
+      <button class="number" onclick="appendValue('9')">9</button> <!-- Button für die Zahl 9 -->
+      <button class="operator" onclick="appendOperator('*')">*</button> <!-- Button für die Multiplikation -->
+      <button class="number" onclick="appendValue('4')">4</button> <!-- Button für die Zahl 4 -->
+      <button class="number" onclick="appendValue('5')">5</button> <!-- Button für die Zahl 5 -->
+      <button class="number" onclick="appendValue('6')">6</button> <!-- Button für die Zahl 6 -->
+      <button class="operator" onclick="appendOperator('-')">-</button> <!-- Button für die Subtraktion -->
+      <button class="number" onclick="appendValue('1')">1</button> <!-- Button für die Zahl 1 -->
+      <button class="number" onclick="appendValue('2')">2</button> <!-- Button für die Zahl 2 -->
+      <button class="number" onclick="appendValue('3')">3</button> <!-- Button für die Zahl 3 -->
+      <button class="operator" onclick="appendOperator('+')">+</button> <!-- Button für die Addition -->
+      <button class="number zero" onclick="appendValue('0')">0</button> <!-- Button für die Zahl 0 -->
+      <button class="forms" onclick="appendValue('.')">.</button> <!-- Button für das Komma -->
+      <button class="forms" onclick="calculatePercentage()">%</button> <!-- Button für die Prozentberechnung -->
+      <button class="operator" onclick="calculate()">=</button> <!-- Button für die Auswertung des Ausdrucks -->
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- Einbindung der externen JavaScript-Datei -->
+</body>
+</html>

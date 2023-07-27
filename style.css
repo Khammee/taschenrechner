@@ -1,0 +1,64 @@
+/* Allgemeines Styling für den Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Die Höhe des Body-Elements auf 100% der sichtbaren Höhe des Viewports setzen */
+    background-color: #f0f0f0; /* Hintergrundfarbe des Body-Elements */
+}
+
+/* Stil für den Calculator-Container */
+.calculator-box {
+    width: 300px; /* Die Breite des Containers auf 300px festlegen */
+    padding: 20px; /* Einen Innenabstand von 20px setzen */
+    border: 2px solid #ccc; /* Einen 2px dicken, gestrichelten Rahmen in grauer Farbe setzen */
+    border-radius: 10px; /* Abrundung der Ecken des Containers auf 10px */
+    background-color: #F0E68C; /* Hintergrundfarbe des Containers auf sandgelb setzen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Einen leichten Schatten für den Container hinzufügen */
+    text-align: center; /* Den Inhalt des Containers zentrieren */
+}
+
+/* Stil für das Result-Display */
+#result {
+    margin-bottom:15px; /* Einen Außenabstand von 15px nach unten setzen */
+    font-size: 24px; /* Die Schriftgröße auf 24px festlegen */
+    border: 1px solid #ccc; /* Einen 1px dicken, gestrichelten Rahmen in grauer Farbe setzen */
+    border-radius: 5px; /* Abrundung der Ecken des Result-Displays auf 5px */
+}
+
+/* Stil für die Display History-Box */
+#history {
+    margin-bottom: 15px; /* Einen Außenabstand von 15px nach unten setzen */
+    padding: 10px; /* Einen Innenabstand von 10px setzen */
+    font-size: 18px; /* Die Schriftgröße auf 18px festlegen */
+    border: 1px solid #ccc; /* Einen 1px dicken, gestrichelten Rahmen in grauer Farbe setzen */
+    border-radius: 5px; /* Abrundung der Ecken der Display History-Box auf 5px */
+    background-color: #F0D529; /* Hintergrundfarbe der Display History-Box auf helles Gelb setzen */
+}
+
+/* Stil für den Calculator */
+.calculator {
+    display: grid; /* Grid verwenden, um die Buttons anzuordnen */
+    grid-template-columns: repeat(4, 1fr); /* Vier gleichmäßige Spalten für die Buttons */
+    grid-gap: 5px; /* Einen Abstand von 5px zwischen den Buttons setzen */
+}
+
+/* Buttons mit den Klassen .number, .operator, .zero und .forms stylen */
+button.number,
+button.operator,
+button.zero,
+button.forms {
+    padding: 10px; /* Einen Innenabstand von 10px setzen */
+    font-size: 24px; /* Die Schriftgröße auf 24px festlegen */
+    background-color: #BAE332; /* Hintergrundfarbe der Buttons auf ein helles Grün setzen */
+    border: 1px solid #ccc; /* Einen 1px dicken, gestrichelten Rahmen in grauer Farbe setzen */
+    border-radius: 5px; /* Abrundung der Ecken der Buttons auf 5px */
+    cursor: pointer; /* Den Cursor ändern, um anzuzeigen, dass die Buttons anklickbar sind */
+    width: 100%; /* Die Buttons sollen die gesamte Breite der Spalte einnehmen */
+    height: 60px; /* Einheitliche Höhe für alle Buttons */
+}
+
+/* Stil für alle Buttons ändern, wenn sie gehovered werden */
+button:hover {
+    background-color: #BA9232; /* Die Hintergrundfarbe ändern, wenn der Button gehovered wird */
+}
